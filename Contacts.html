@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="tcontainer">
+            <div class="ticker-wrap">
+                <div class="ticker-move">
+                    <div class="ticker-item">Промоции</div>
+                    <div class="ticker-item">Магазин</div>
+                    <div class="ticker-item">Най-продавани продукти</div>
+                    <div class="ticker-item">Партньори</div>
+                    <div class="ticker-item">Хората за нас</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="index.html">
+                <img class="logo" src="images/logo1.png" alt="Logo_Klamerko" titles="Logo_Klamerko">
+            </a>
+            <nav class="main_navigation">
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#" alt="">Промоции</a>
+                            <div class="dropdown-content">
+                                <a href="daily_promo.html">Дневна промоция</a>
+                                <a href="weekly_promo.html">Седмична промоция</a>
+                                <a href="mounth_promo.html">Месечна промоция</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#" alt="">Магазин</a>
+                            <div class="dropdown-content">
+                                <a href="printers.html">Консумативи за принтер</a>
+                                <a href="markers.html">Маркери</a>
+                                <a href="pens.html">Пишещи средства</a>
+                                <a href="paper.html">Офсетова хартия</a>
+                                <a href="package.html">Опаковъчни материали</a>
+                                <a href="documents.html">Формуляри</a>
+                                <a href="children.html">Ученически пособия</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="ForUS.html" alt="">За нас</a>
+
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="Contacts.html" alt="">Контакти</a>
+
+                </ul>
+            </nav>
+            </div>
+    </header>
+
+    <body>
+        <style>
+            body {
+                font-family: Verdana;
+                color: darkred;
+            }
+            
+            aside {
+                margin-right: 50px;
+                width: 50%;
+            }
+            
+            main {
+                width: 50%;
+            }
+            
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            label {
+                display: flex;
+            }
+            
+            .application.form input {
+                width: 80%;
+                margin-bottom: 12px;
+            }
+            
+            .application.form textarea {
+                width: 80%;
+            }
+            
+            .button {
+                width: 20%;
+                color: darkred;
+            }
+            /* Set the size of the div element that contains the map */
+            
+            #map {
+                height: 400px;
+                /* The height is 400 pixels */
+                width: 100%;
+                /* The width is the width of the web page */
+            }
+        </style>
+
+        <div class="container">
+            <aside>
+                <h2>
+                    "Кламер,ножица,хартия" ЕООД
+                </h2>
+                <p>Управител: Светослав Стойков</p>
+                <p>Телефон за контакти: +359 88 981 3958</p>
+                <p>E-mail: office@klamerko.com</p>
+
+                <title>Add Map</title>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCscj0CX0WrpwRMWByIpu4ZuNhRRBgVF9o&callback=initMap&libraries=&v=weekly" defer></script>
+                <link rel="stylesheet" type="text/css" href="./style.css" />
+                <script src="script.js"></script>
+                <h4>Адрес:</h4>
+                <h5>гр.София, жк.Обеля 2, бл.260</h5>
+                <!--The div element for the map -->
+                <div id="map"></div>
+            </aside>
+            <main>
+                <h2>Контактна форма</h2>
+
+                <form class="application form" action="Contacts.html" onsubmit="printToConsole()" method="POST">
+                    <label for="application">Име: <span style="color: crimson;">*</span></label>
+                    <input required type="text" id="name">
+
+                    <label for="application">Телефон: </label>
+                    <input required type="tel" id="tel">
+
+
+                    <label for="application">Имейл: <span style="color: crimson;">*</span></label>
+                    <input required type="email" id="mail">
+
+                    <label for="application">Съобщение: <span style="color: crimson;">*</span></label>
+                    <textarea name="message" rows="7" id="message" class="txt" spellcheck="false"></textarea>
+
+                    <button class="button" type="submit">Изпрати</button>
+                </form>
+
+        </div>
+        </main>
+
+        </div>
+
+        <script src=" script.js " type="text/javascript "></script>
+    </body>
+
+</html>
